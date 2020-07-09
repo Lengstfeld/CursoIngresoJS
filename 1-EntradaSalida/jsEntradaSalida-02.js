@@ -5,5 +5,7 @@ function mostrar()
 {
 	var mensaje = prompt()
 	alert(mensaje);
+	
+	
 }
 
