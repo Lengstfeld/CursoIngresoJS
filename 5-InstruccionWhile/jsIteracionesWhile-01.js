@@ -6,7 +6,7 @@ function mostrar()
 	var text = " "
 	var x = 0
 	while (x <= 10) {
-		text += "El siguiente num es " + x + ", ";
+		text += x + ", ";
 		x++
 	}
 	alert(text);
