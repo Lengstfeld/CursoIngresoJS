@@ -1,8 +1,9 @@
 function mostrar()
 {
-	var edad= parseInt(txtIdEdad.value)
+	var edad;
+	edad= parseInt(txtIdEdad.value);
 	if(edad <= 15){
-		alert("Eres una niña")
+		alert("Eres una niña");
 	}
 	else 
 	alert("Eres una adolecente o mayor");
