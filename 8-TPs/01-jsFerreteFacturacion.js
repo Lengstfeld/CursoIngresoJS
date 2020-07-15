@@ -16,7 +16,7 @@ function Sumar ()
     tres = parseInt(txtIdPrecioTres.value)    
     suma = uno + dos + tres;
 
-    alert(suma)
+    alert(suma);
 }
 function Promedio () 
 {
@@ -30,7 +30,7 @@ function Promedio ()
     tres = parseInt(txtIdPrecioTres.value);
     promediar = (uno + dos + tres)/3;
     
-    alert(promediar)	
+    alert(promediar);	
 }
 function PrecioFinal () 
 {
@@ -44,5 +44,5 @@ function PrecioFinal ()
     tres = parseInt(txtIdPrecioTres.value)
     sumaConIVA = (uno + dos + tres)*1.21;
     
-    alert(sumaConIVA)
+    alert(sumaConIVA);
 }

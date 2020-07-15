@@ -14,7 +14,7 @@ function Rectangulo ()
     ancho = parseInt(txtIdAncho.value);
     sumar = ((largo + ancho)* 2 )* 3;
 
-    alert(`Se necesita ${sumar}m. de alambre`)
+    alert(`Se necesita ${sumar}m. de alambre`);
 
 }
 function Circulo () 
@@ -27,7 +27,7 @@ function Circulo ()
     pi = 3.14;
     areaCirculo = ((radio * radio)*pi) *3;
 
-    alert(`Se necesita ${areaCirculo}m. de alambre`)
+    alert(`Se necesita ${areaCirculo}m. de alambre`);
 	
 }
 function Materiales () 
@@ -39,8 +39,8 @@ function Materiales ()
 
     largo = parseInt(txtIdLargo.value); 
     ancho = parseInt(txtIdAncho.value);
-    cemento = (largo * ancho) * 2
-    cal = (largo * ancho) * 3
+    cemento = (largo * ancho) * 2;
+    cal = (largo * ancho) * 3;
     
-    alert(`Se necesita ${cemento} bolsas de cemento y ${cal} de cal`)
+    alert(`Se necesita ${cemento} bolsas de cemento y ${cal} de cal`);
 }
