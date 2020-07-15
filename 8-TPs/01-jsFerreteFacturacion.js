@@ -6,26 +6,43 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 
 function Sumar () 
 {
-    var uno = parseInt(txtIdPrecioUno.value)
-    var dos = parseInt(txtIdPrecioDos.value)
-    var tres = parseInt(txtIdPrecioTres.value)
-    var suma = uno + dos + tres;
+    var uno;
+    var dos;
+    var tres;
+    var suma;
+    
+    uno = parseInt(txtIdPrecioUno.value)    
+    dos = parseInt(txtIdPrecioDos.value)    
+    tres = parseInt(txtIdPrecioTres.value)    
+    suma = uno + dos + tres;
+
     alert(suma)
 }
 function Promedio () 
 {
-    var uno = parseInt(txtIdPrecioUno.value)
-    var dos = parseInt(txtIdPrecioDos.value)
-    var tres = parseInt(txtIdPrecioTres.value)
-    var promediar = (uno + dos + tres)/3;
-    alert(promediar)
-	
+    var uno;
+    var dos;
+    var tres;
+    var promediar;
+    
+    uno = parseInt(txtIdPrecioUno.value);
+    dos = parseInt(txtIdPrecioDos.value);
+    tres = parseInt(txtIdPrecioTres.value);
+    promediar = (uno + dos + tres)/3;
+    
+    alert(promediar)	
 }
 function PrecioFinal () 
 {
-    var uno = parseInt(txtIdPrecioUno.value)
-    var dos = parseInt(txtIdPrecioDos.value)
-    var tres = parseInt(txtIdPrecioTres.value)
-	var sumaConIVA = (uno + dos + tres)*1.21;
+    var uno;
+    var dos;
+    var tres;
+    var sumaConIVA;
+    
+    uno = parseInt(txtIdPrecioUno.value)
+    dos = parseInt(txtIdPrecioDos.value)
+    tres = parseInt(txtIdPrecioTres.value)
+    sumaConIVA = (uno + dos + tres)*1.21;
+    
     alert(sumaConIVA)
 }
