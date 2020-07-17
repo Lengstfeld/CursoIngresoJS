@@ -7,7 +7,9 @@ function mostrarAumento()
 {
 	var sueldo;
 	var aumento10;
-	sueldo = parseInt(txtIdSueldo.value);
+	var idSueldo;
+	idSueldo = document.getElementById("txtIdSueldo").value;
+	sueldo = parseInt(idSueldo);
 	aumento10 = sueldo * 1.1;
 	txtIdResultado.value = aumento10;
 }

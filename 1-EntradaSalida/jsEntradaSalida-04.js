@@ -3,9 +3,9 @@ Debemos lograr tomar un dato por 'PROMPT'
 y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
-{
-	var msj;
+{	
+	var msj;	
 	msj = prompt();
-	txtIdNombre.value = msj;
+	document.getElementById("txtIdNombre").value = msj;
 }
 
