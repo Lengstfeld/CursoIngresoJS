@@ -7,48 +7,45 @@ var n1;
 var n2;
 var id1;
 var id2;
+var resultado;
 
 function sumar()
-{		
-	var resultSuma;
+{
 	id1 = document.getElementById("txtIdNumeroUno").value;
     id2 = document.getElementById("txtIdNumeroDos").value;
 	n1 = parseInt(id1);
     n2 = parseInt(id2);
-	resultSuma = n1 + n2;	
-	alert(`La suma es: ${resultSuma}`);	
+	resultado = n1 + n2;	
+	alert(`La suma es: ${resultado}`);	
 }
 
 function restar()
 {
-	var resultResta;
 	id1 = document.getElementById("txtIdNumeroUno").value;
 	id2 = document.getElementById("txtIdNumeroDos").value;
 	n1 = parseInt(id1);
     n2 = parseInt(id2);
-	resultResta = n1 - n2;
-	alert(`La resta es: ${resultResta}`);
+	resultado = n1 - n2;
+	alert(`La resta es: ${resultado}`);
 }
 
 function multiplicar()
 {
-	var resultMultiplicar;
 	id1 = document.getElementById("txtIdNumeroUno").value;
 	id2 = document.getElementById("txtIdNumeroDos").value;
 	n1 = parseInt(id1);
     n2 = parseInt(id2);
-	resultMultiplicar = n1 * n2;
-	alert(`La multiplicación es: ${resultMultiplicar}`);
+	resultado = n1 * n2;
+	alert(`La multiplicación es: ${resultado}`);
 }
 
 function dividir()
 {
-	var resultDivision;
 	id1 = document.getElementById("txtIdNumeroUno").value;
 	id2 = document.getElementById("txtIdNumeroDos").value;
 	n1 = parseInt(id1);
     n2 = parseInt(id2);
-	resultDivision = n1 / n2;
-	alert(`La división es: ${resultDivision}`);
+	resultado = n1 / n2;
+	alert(`La división es: ${resultado}`);
 }
 
