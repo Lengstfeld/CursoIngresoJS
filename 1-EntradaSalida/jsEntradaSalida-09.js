@@ -10,6 +10,6 @@ function mostrarAumento()
 	var idSueldo;
 	idSueldo = document.getElementById("txtIdSueldo").value;
 	sueldo = parseInt(idSueldo);
-	aumento10 = sueldo * 1.1;
-	txtIdResultado.value = aumento10;
+	aumento10 = sueldo +(sueldo * 10)/100;
+	document.getElementById("txtIdResultado").value = aumento10
 }
