@@ -3,16 +3,16 @@ A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
-var uno;
-var dos;
-var tres;
-var idPrecioUno;
-var idPrecioDos;
-var idPrecioTres;
 
 function Sumar () 
 {
-    var suma;
+    let suma;
+    let uno;
+    let dos;
+    let tres;
+    let idPrecioUno;
+    let idPrecioDos;
+    let idPrecioTres;
     
     idPrecioUno = document.getElementById("txtIdPrecioUno").value;
     idPrecioDos = document.getElementById("txtIdPrecioDos").value;
@@ -26,21 +26,33 @@ function Sumar ()
 }
 function Promedio () 
 {
-    var promediar;
+    let promediar;
+    let uno;
+    let dos;
+    let tres;
+    let idPrecioUno;
+    let idPrecioDos;
+    let idPrecioTres;
     
     idPrecioUno = document.getElementById("txtIdPrecioUno").value;
     idPrecioDos = document.getElementById("txtIdPrecioDos").value;
     idPrecioTres = document.getElementById("txtIdPrecioTres").value;
-    uno = parseInt(idPrecioUno);    
-    dos = parseInt(idPrecioDos);    
-    tres = parseInt(idPrecioTres); 
+    uno = parseFloat(idPrecioUno);    
+    dos = parseFloat(idPrecioDos);    
+    tres = parseFloat(idPrecioTres); 
     promediar = (uno + dos + tres)/3;
     
-    alert(promediar);	
+    alert(promediar.toFixed(2));	
 }
 function PrecioFinal () 
 {
-    var sumaConIVA;
+    let sumaConIVA;
+    let uno;
+    let dos;
+    let tres;
+    let idPrecioUno;
+    let idPrecioDos;
+    let idPrecioTres;
     
     idPrecioUno = document.getElementById("txtIdPrecioUno").value;
     idPrecioDos = document.getElementById("txtIdPrecioDos").value;
