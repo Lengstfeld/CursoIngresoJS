@@ -1,22 +1,21 @@
-function mostrar()
-{
+function mostrar() {
 	let mesDelAño;
 	mesDelAño = document.getElementById("txtIdMes").value;
 	switch (mesDelAño) {
-			case "Febrero":
+		case "Febrero":
 			alert(" 29 días.");
 			break;
-			case "Marzo":
-				case "Enero":
-					case "Mayo":
-						case "Julio":
-							case "Agosto":
-								case "Octubre":
-									case "Diciembre":
-				alert("31 días.");
+		case "Marzo":
+		case "Enero":
+		case "Mayo":
+		case "Julio":
+		case "Agosto":
+		case "Octubre":
+		case "Diciembre":
+			alert("31 días.");
 			break;
-			default:
-				alert("30 días.");
+		default:
+			alert("30 días.");
 			break;
-}
-}//FIN DE LA FUNCIÓN
+	}
+} //FIN DE LA FUNCIÓN

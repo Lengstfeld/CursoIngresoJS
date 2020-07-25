@@ -1,5 +1,4 @@
-function mostrar()
-{
+function mostrar() {
 	let estacionIngresada;
 	let destino;
 	estacionIngresada = document.getElementById("txtIdEstacion").value;
@@ -8,15 +7,15 @@ function mostrar()
 		case "Invierno":
 			switch (destino) {
 				case "Bariloche":
-					alert("18000")					
+					alert("18000")
 					break;
-					case "Cataratas":
-						case "Mar del plata":
-					alert("13500")					
+				case "Cataratas":
+				case "Mar del plata":
+					alert("13500")
 					break;
-					case "Cordoba":
-					alert("12000")					
-					break;			
+				case "Cordoba":
+					alert("12000")
+					break;
 				default:
 					break;
 			}
@@ -24,32 +23,32 @@ function mostrar()
 		case "Verano":
 			switch (destino) {
 				case "Bariloche":
-					alert("12000")					
+					alert("12000")
 					break;
-					case "Cataratas":
-						case "Cordoba":
-					alert("16500")					
+				case "Cataratas":
+				case "Cordoba":
+					alert("16500")
 					break;
-					case "Mar del plata":
-					alert("18000")					
-					break;		
+				case "Mar del plata":
+					alert("18000")
+					break;
 				default:
 					break;
-			}	
+			}
 			break;
 		case "Otoño":
-			case "Primavera":
+		case "Primavera":
 			switch (destino) {
-					case "Cordoba":
-					alert("15000")					
-					break;			
+				case "Cordoba":
+					alert("15000")
+					break;
 				default:
 					alert("16500")
 					break;
-			}	
-			break;	
+			}
+			break;
 		default:
 			break;
 	}
 
-}//FIN DE LA FUNCIÓN
+} //FIN DE LA FUNCIÓN
