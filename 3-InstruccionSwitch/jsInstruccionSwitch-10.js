@@ -1,20 +1,18 @@
 function mostrar()
 {
-	var estacionIngresada =txtIdEstacion.value;
-	var destino = txtIdDestino.value;
+	let estacionIngresada;
+	let destino;
+	estacionIngresada = document.getElementById("txtIdEstacion").value;
+	destino = document.getElementById("txtIdDestino").value;
 	
 	switch (estacionIngresada) {
 		case "Invierno":
 			switch (destino) {
 				case "Bariloche":
 					alert("Se viaja");					
-					break;
-					case "Cataratas":
-						case "Mar del plata":
-							case "Cordoba":
-					alert("No se viaja");					
-					break;			
+					break;	
 				default:
+					alert("No se viaja");
 					break;
 			}
 			break;
@@ -23,24 +21,16 @@ function mostrar()
 				case "Bariloche":
 					case "Cordoba":
 					alert("No se viaja");					
-					break;
-					case "Cataratas":
-						case "Mar del plata":
-					alert("Se viaja");					
-					break;			
+					break;		
 				default:
+					alert("Se viaja");
 					break;
 			}
 			break;
 			case "Otoño":
-			switch (destino) {
-				case "Bariloche":
-					case "Cataratas":
-						case "Mar del plata":
-							case "Cordoba":
-					alert("Se viaja");					
-					break;		
+			switch (destino) {		
 				default:
+					alert("Se viaja");
 					break;
 			}
 			break;
@@ -48,13 +38,9 @@ function mostrar()
 			switch (destino) {
 				case "Bariloche":
 					alert("No se viaja")					
-					break;
-					case "Cataratas":
-						case "Mar del plata":
-							case "Cordoba":
-					alert("Se viaja");					
-					break;		
+					break;	
 				default:
+					alert("Se viaja");
 					break;
 			}
 			break;

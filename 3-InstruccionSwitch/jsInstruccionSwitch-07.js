@@ -1,6 +1,7 @@
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
+	let destinoIngresado;
+	destinoIngresado = document.getElementById("txtIdDestino").value;
 	switch (destinoIngresado) {
 		case "Bariloche":
 			alert("Oeste");

@@ -1,8 +1,8 @@
 function mostrar()
 {
-	var hora
 	//tomo la hora
-	var horaDelDia =txtIdHora.value;
+	let horaDelDia;
+	horaDelDia = document.getElementById("txtIdHora").value;
 	switch (horaDelDia) {
 		case "7":
 			case "8":
@@ -11,8 +11,7 @@ function mostrar()
 						case "11":
 							alert("Es de mañana.");
 			
-			break;
-	
+			break;	
 		default:
 			break;
 	}
