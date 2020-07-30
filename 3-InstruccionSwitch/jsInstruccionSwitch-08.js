@@ -1,3 +1,4 @@
+// Switch
 function mostrar()
 {
 	let destinoIngresado;
@@ -6,10 +7,10 @@ function mostrar()
 		case "Bariloche":
 			case "Ushuaia":
 			alert("Frio");
-			break;	
+			break;
 		default:
 			alert("Calor");
 			break;
 	}
 
-}//FIN DE LA FUNCIÓN
+}

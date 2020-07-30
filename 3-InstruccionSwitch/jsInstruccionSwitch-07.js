@@ -12,10 +12,8 @@ function mostrar()
 		case "Mar del plata":
 			alert("Este")
 			break;
-		case "Ushuaia":
-			alert("Sur")
-			break;	
 		default:
+			alert("Sur")
 			break;
 	}
 
