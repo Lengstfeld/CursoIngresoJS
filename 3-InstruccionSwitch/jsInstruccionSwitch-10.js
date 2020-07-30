@@ -1,17 +1,23 @@
 function mostrar() {
 	let estacionIngresada;
 	let destino;
+	let viaja;
+	let noViaja;
+	
+	viaja = alert("Se viaja");
+	noViaja = alert("No se viaja");
 	estacionIngresada = document.getElementById("txtIdEstacion").value;
 	destino = document.getElementById("txtIdDestino").value;
+	
 
 	switch (estacionIngresada) {
 		case "Invierno":
 			switch (destino) {
 				case "Bariloche":
-					alert("Se viaja");
+					viaja;
 					break;
 				default:
-					alert("No se viaja");
+					noViaja;
 					break;
 			}
 			break;
@@ -19,27 +25,27 @@ function mostrar() {
 			switch (destino) {
 				case "Bariloche":
 				case "Cordoba":
-					alert("No se viaja");
+					noViaja;
 					break;
 				default:
-					alert("Se viaja");
+					viaja;
 					break;
 			}
 			break;
 		case "Otoño":
 			switch (destino) {
 				default:
-					alert("Se viaja");
+					viaja;
 					break;
 			}
 			break;
 		case "Primavera":
 			switch (destino) {
 				case "Bariloche":
-					alert("No se viaja")
+					noViaja;
 					break;
 				default:
-					alert("Se viaja");
+					viaja;
 					break;
 			}
 			break;
