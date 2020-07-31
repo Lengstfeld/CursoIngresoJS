@@ -3,10 +3,9 @@ al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
 function mostrar()
 {
 	let claveIngresada;
-	let pass;
-	claveIngresada = prompt("ingrese el número clave.");
-	pass = "utn750";
-	while (claveIngresada != pass) {
+	const password = "utn750";
+	claveIngresada = prompt("ingrese la clave.");
+	while (claveIngresada != password) {
 		claveIngresada=prompt("Intente nuevamente");
 	}
 	alert("Puedes pasar");

@@ -7,7 +7,7 @@ function mostrar()
 	let x = 0;
 	while (x < 10) {
 		x++;
-		text += x + ", ";
+		text += x + " ";
 	}
 	alert(text);
 }//FIN DE LA FUNCIÓN

@@ -5,8 +5,8 @@ function mostrar()
 {
 	let text = " ";
 	let x = 10;
-	while (x >= 0) {
-		text +=  x + ", ";
+	while (x > 0) {
+		text +=  x + " ";
 		x--;
 	}
 	alert(text);
