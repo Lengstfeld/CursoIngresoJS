@@ -13,14 +13,53 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
+   let random = 0;
+   let contador = 0;
+   random = Math.floor(Math.random() * 100 + 1);
+   document.getElementById("txtIdIntentos").value = contador;
+   document.getElementById("txtIdNumero").value = random;
+		//alert(numeroSecreto );	
 
 }
 
 function verificar()
 {
-	
+  let verificarNumero;
+  verificarNumero = document.getElementById("txtIdNumero").value;
+	switch (verificarNumero) {
+    case "1":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+      case "value":
+      
+      break;
+  
+    default:
+      break;
+  }
 	
 }
