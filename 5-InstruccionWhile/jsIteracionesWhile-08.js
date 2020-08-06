@@ -34,8 +34,6 @@ function mostrar()
 	let sumaPositivos;
 	let multiplicacionNegativos;
 	let contador;
-	let negativo;
-	negativo = 0;
 	contador=0;
 	sumaPositivos=0;
 	multiplicacionNegativos=1; // Porque es el neutro de la Multiplicacion.
@@ -47,10 +45,10 @@ function mostrar()
 		if(numeroIngresado >= 0){
 			sumaPositivos = sumaPositivos + numeroIngresado;
 		}else {
-			negativo = multiplicacionNegativos * numeroIngresado;
+			multiplicacionNegativos = multiplicacionNegativos * numeroIngresado;
 		}
 		contador++;
 	}  				
 	document.getElementById("txtIdSuma").value = sumaPositivos;
-	document.getElementById("txtIdProducto").value = negativo;
+	document.getElementById("txtIdProducto").value = multiplicacionNegativos;
 }//FIN DE LA FUNCIÓN

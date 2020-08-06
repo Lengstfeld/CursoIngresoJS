@@ -13,17 +13,57 @@ hasta que el usuario quiera, mostrar:
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	let respuesta;
+	let numeroIngresado;
+	let sumaNegativos;
+	let sumaPositivos;
+	let promedioPositivo;
+	let promedioNegativo;
+	let cantidadCeros;
 
 	respuesta="si";
+	numeroIngresado=0;
+	sumaNegativos=0;
+	sumaPositivos=0;
+	promedioNegativo=0;
+	promedioPositivo=0;
+	cantidadCeros=0;
+	cantidadPares=0;
+	cantidadImpares=0;
 
+	//comienza el while
 	while(respuesta=="si")
 	{
-		
-		respuesta=prompt("desea continuar?");
+		numeroIngresado = parseInt(prompt("Ingresse un numero: "));
+		if(numeroIngresado > 0){
+			sumaPositivos =+ numeroIngresado;
+			promedioPositivo++;
+		}
+		else if(numeroIngresado < 0){
+			sumaNegativos =+ numeroIngresado;
+			promedioNegativo++;
+		}
+		else if(numeroIngresado == 0){
+			cantidadCeros++;
+		}
+		else if(numeroIngresado%2 == 0){
+			cantidadPares++;
+		}
+		else if(numeroIngresado%2 != 0){
+			cantidadImpares++;
+		}
+		respuesta=prompt("Desea continuar? si/no").toLowerCase();
 	}//fin del while
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+	document.write("La suma de positivos es :"+sumaPositivos+"<br>");
+	document.write("La suma de negativos es :"+sumaNegativos+"<br><br>");
+	document.write("El promedio de positivos es :"+(sumaPositivos/promedioPositivo)+"<br>");
+	document.write("El promedio de negativos es :"+(sumaNegativos/promedioNegativo)+"<br><br>");
+	document.write("La cantaidad de + ingresados fue de :"+promedioPositivo+"<br>");
+	document.write("La cantaidad de - ingresados fue de :"+promedioNegativo+"<br>");
+	document.write("La cantaidad de 0 ingresados fue de :"+cantidadCeros+"<br><br>");
+	document.write("La cantaidad de numeros pares es :"+cantidadPares+"<br>");
+	document.write("La cantaidad de numeros impares es :"+cantidadImpares+"<br><br>");
+	document.write("La diferencia entre negativos y positivos es :"+(sumaPositivos-sumaNegativos)+"<br>");
+
 }//FIN DE LA FUNCIÓN
