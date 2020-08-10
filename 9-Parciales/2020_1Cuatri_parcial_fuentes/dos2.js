@@ -14,27 +14,43 @@ f) El tipo mas caro
 
 function mostrar()
 {
-  let banderaPrimaria=0;
+  let promedio;
+  let banderaPrimaria;
   let productosConstruccion;
-  let acumuladorArena=0;
-  let acumuladorCal=0;
-  let acumuladorCemento=0;
-  let cantidadBolsas=0;
-  let precioPorBolsa=0;
+  let acumuladorArena;
+  let acumuladorCal;
+  let acumuladorCemento;
+  let cantidadBolsas;
+  let precioPorBolsa;
   let respuesta;
-  let descuento=0;
-  let brutoSinDescuento=0;
-  let totalAPagar=0;
-  let totalAPagarConDescuento=0;
-  let totalAPagarSinDescuento=0;
+  let descuento;
+  let brutoSinDescuento;
+  let totalAPagar;
+  let totalAPagarConDescuento;
+  let totalAPagarSinDescuento;
   let productoConMasBolsas;
   let ProductoMasCaro;
-  let TotalArena=0;
-  let TotalCal=0;
-  let TotalCemento=0;
-  let contadorArena=0;
-  let contadorCal=0;
-  let contadorCemento=0;
+  let TotalArena;
+  let TotalCal;
+  let TotalCemento;  
+  let contadorArena = 0;
+  let contadorCal = 0;
+  let contadorCemento = 0;
+    
+  banderaPrimaria=0;
+  totalArena=0;
+  totalCemento=0;
+  totalCal=0;
+  promedio=0;
+  totalAPagarSinDescuento=0;
+  totalAPagarConDescuento=0;
+  totalAPagar=0;
+  acumuladorArena =0;
+  acumuladorCal=0;
+  acumuladorCemento=0;
+  cantidadBolsas=0; 
+  precioPorBolsa=0;
+  descuento=0;
 
   do{
     productosConstruccion = prompt("Ingrese el producto (arena, cal, cemento): ").toLowerCase();
@@ -51,7 +67,6 @@ function mostrar()
     while (precioPorBolsa < 1) {
       precioPorBolsa = parseFloat(prompt("Error. Ingrece el precio del producto por unidad: "));
     }
-    totalAPagar = precioPorBolsa*cantidadBolsas;
 
     switch (productosConstruccion) {
       case "arena":
@@ -71,7 +86,9 @@ function mostrar()
         totalCemento+=totalAPagar;
         contadorCemento++;
         break;
-    }    
+    }
+    
+    totalAPagar = precioPorBolsa*cantidadBolsas;
     respuesta = prompt("Quiere ingresar otro producto? si/no");
   }while(respuesta == "si")
 
